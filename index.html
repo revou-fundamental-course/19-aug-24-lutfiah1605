@@ -16,8 +16,8 @@
         <section>
             <a href="#" class="nav-item">Home</a>
             <a href="#our-profile" class="nav-item">Our Profile</a>
-            <a href="#" class="nav-item">Achivement</a>
-            <a href="#" class="nav-item">Message Us</a>
+            <a href="#achivement" class="nav-item">Achivement</a>
+            <a href="#messageUs" class="nav-item">Message Us</a>
         </section>
     </nav>
 
@@ -25,11 +25,13 @@
 
     <main>
         <article>
-            <header>
-                <h1>Welcome user, to our Website</h1>
+            <header class="header-home">
+                <h1>Welcome, <span id="name">User</span> to our Website</h1>
+                <button id="tombol" class="button-74">Change Name</button>
+                <script src="js\script.js"></script>
             </header>
 
-            <p>Lorem Ipsum dolor sit amet adipiscing</p>
+            <h2>Green Studio</h2>
 
             <div class="banner-img"></div>
         </article>
@@ -60,14 +62,53 @@
 
         </section>
 
-        <section>
-            <form>
+        <hr/>
+        
+        <section id="achivement">
+            <header>
+                <h1>Achivement</h1>
+            </header>
 
-            </form>
+            <h4>Sebagai pelopor dalam pendidikan desain berkelanjutan, Green Studio telah memberdayakan lebih dari 1.500 siswa dari berbagai latar belakang untuk mewujudkan aspirasi kreatif mereka. Kurikulum inovatif kami, ditambah dengan bimbingan dari para desainer terkemuka di industri, telah menghasilkan hasil yang luar biasa. Sebanyak 98% lulusan kami telah mengamankan posisi yang didambakan di perusahaan desain terkenal atau memulai karier freelance yang menarik dalam waktu satu tahun setelah kelulusan. Selain itu, Green Studio telah berada di garis depan dalam mempromosikan praktik desain yang ramah lingkungan, menginspirasi siswa kami untuk menciptakan solusi inovatif yang mengatasi tantangan lingkungan yang mendesak. Melalui proyek kolaboratif, lokakarya, dan kemitraan industri, kami sedang membangun komunitas desainer yang tidak hanya mahir secara teknis tetapi juga sangat berkomitmen pada tanggung jawab sosial dan lingkungan.</h4>
+        </section>
 
-            <div>
+        <hr />
 
-            </div>
+        <section id="messageUs">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <section class="message-us">
+                <form name="message-form" onsubmit="return validateform()">
+                    Nama: <input placeholder="Nama" type="text" name="full-name" />
+                    <br />
+
+                    Tanggal Lahir:
+                    <input type="date" name="birth-date" />
+                    <br />
+
+                    Jenis Kelamin:
+                    <input type="radio" id="male" name="gender" value="Laki-laki" />
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan" />
+                    <label for="female">Perempuan</label>
+                    <br />
+
+                    Pesan:
+                    <textarea placeholder="pesan" name="messages"></textarea>
+                    <br />
+
+                    <input type="submit" value="submit" />
+                </form>
+    
+                <div class="display-form">
+                    <p>Nama: <span id="sender-full-name"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                    <p>Pesan: <span id="sender-messages"></span></p>
+                </div>
+            </section>
         </section>
 
     </main>

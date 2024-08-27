@@ -5,10 +5,17 @@ nav {
     justify-content: space-between;
 }
 
+.header-home {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
 .logo-icon {
     height: 48px;
     width: 48px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(css\logo.jpg);
     background-size: cover;
     border-radius: 50%;
 }
@@ -47,4 +54,54 @@ nav {
     background-position: center;
     border-radius: 50%;
     width: 50px;
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 15px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0 6px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.message-us {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.display-form {
+    border: 1px solid;
+    padding-inline-end: 400px;
+    padding-inline-start: 15px;
 }
