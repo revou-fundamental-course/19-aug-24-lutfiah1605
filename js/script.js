@@ -2,7 +2,13 @@
 function replaceName() {
     let name = prompt("What's Your Name?", "");
     document.getElementById("name").innerHTML = name
+    if (name == "") {
+        alert("This field is required!")
+        replaceName.focus()
+        return false;
+    }
 }
+
 
 document.getElementById('tombol').addEventListener("click", function() {
     replaceName();
