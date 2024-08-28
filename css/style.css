@@ -1,8 +1,36 @@
 /* ini css */
+@media screen and (max-width: 600px) {
+  nav{
+    flex-direction: column;
+  }
+
+  .nav-item {
+    flex-direction: column;
+  }
+
+  .message-us{
+    flex-direction: column;
+  }
+  
+}
+
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-block: 20px;
+
+}
+
+.nav-item {
+  border: 1px solid;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 8px;
 }
 
 .header-home {
@@ -19,22 +47,8 @@ nav {
     border-radius: 50%;
 }
 
-.nav-item {
-    border: 1px solid;
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 8px;
-}
-
 .banner-img {
-    height: 578px;
-    width: 1499px;
-    background-image: url(assets\banner.jpg);
-    background-size: contain;
-    background-position: center
+    width: 100%;
 }
 
 .profile-container{
@@ -49,7 +63,6 @@ nav {
 
 .profile-img {
     height: 50px;
-    background-image: url(https://picsum.photos/1000);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -57,11 +70,11 @@ nav {
 }
 
 .button-74 {
-  background-color: #fbeee0;
-  border: 2px solid #422800;
+  background-color: #21541c;
+  border: 2px solid #1d8236;
   border-radius: 15px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
+  box-shadow: #60a457 4px 4px 0 0;
+  color: #adccae;
   cursor: pointer;
   display: inline-block;
   font-weight: 300;
@@ -80,17 +93,17 @@ nav {
 }
 
 .button-74:hover {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .button-74:active {
-  box-shadow: #422800 2px 2px 0 0;
+  box-shadow: #60a457 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .button-74 {
-    min-width: 120px;
+    min-width: 80px;
     padding: 0 25px;
   }
 }
@@ -101,7 +114,98 @@ nav {
 }
 
 .display-form {
-    border: 1px solid;
     padding-inline-end: 400px;
     padding-inline-start: 15px;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #60a457;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.form-input{
+  position: relative;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.inputs{
+  text-align: left;
+  margin-top: 30px;
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 10px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.radio{
+  margin-top: 30px;
+}
+
+.textarea{
+  text-align: left;
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.button{
+  color: white;
+    margin-top: 20px;
+    background: #1d8236;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 9px 9px 9px #60a457, -9px -9px 9px white;
+    transition: 0.5s;
+    padding-inline: 100px;
+}
+
+.button:hover{
+  box-shadow: none;
+}
+
+@use postcss-preset-env {
+  stage: 0;
+}
+
+:root {
+  --color-background: #000119;
+  --stroke-width: calc(1em / 16);
+  --font-size: 40px;
+  --font-weight: 400;
+  --letter-spacing: calc(1em / 8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  background-clip: text;
+  background-image: linear-gradient(to right, #48ec64, #1d8236, #60a457, #4e9a65);
+  color: var(--color-background);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
+  padding: calc(--stroke-width / 2);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: var(--stroke-width);
 }

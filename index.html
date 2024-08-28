@@ -6,12 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
+
+<!-- body start -->
+
 <body>
+    <!-- nav start -->
     <nav>
         <header>
             <div class="logo-icon"></div>
             <img class="logo-icon" src="./assets/logo1.jpg">
-
         </header>
 
         <section>
@@ -22,9 +25,10 @@
         </section>
     </nav>
 
-    <hr />
+    <!-- main contain -->
 
     <main>
+         <!-- article start -->
         <article>
             <header class="header-home">
                 <h1>Welcome, <span id="name">User</span> to our Website</h1>
@@ -32,15 +36,12 @@
                 <script src="js\script.js"></script>
             </header>
 
-            <h2>Green Studio</h2>
-
             <div class="banner-img"><img class="banner-img" src="./assets/banner.jpg"></div>
             
-
         </article>
 
         <hr />
-
+            <!-- section profile -->
         <section id="our-profile">
             <header>
                 <h1>Our Profile</h1>
@@ -48,25 +49,26 @@
 
             <section class="profile-container">
                 <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Engineer</h2>
+                    <div class="profile-img"><img class="profile-img" src="./assets/poto1.png"></div>
+                    <h2>FOUNDER</h2>
                 </div>
 
                 <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Engineer</h2>
+                    <div class="profile-img"><img class="profile-img" src="./assets/poto2.png"></div>
+                    <h2>STAFF</h2>
                 </div>
 
                 <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Engineer</h2>
+                    <div class="profile-img"><img class="profile-img" src="./assets/poto3.png"></div>
+                    <h2>STAFF</h2>
                 </div>
             </section>
 
         </section>
 
         <hr/>
-        
+        <!-- section acivement -->
+
         <section id="achivement">
             <header>
                 <h1>Achivement</h1>
@@ -76,6 +78,7 @@
         </section>
 
         <hr />
+        <!-- section messageus -->
 
         <section id="messageUs">
             <header>
@@ -83,26 +86,26 @@
             </header>
 
             <section class="message-us">
-                <form name="message-form" onsubmit="return validateform()">
-                    Nama: <input placeholder="Nama" type="text" name="full-name" />
+                <form name="message-form" onsubmit="return validateform()" class="form-input">
+                    Nama: <input placeholder="Nama" type="text" name="full-name" class="inputs"/>
                     <br />
 
                     Tanggal Lahir:
-                    <input type="date" name="birth-date" />
+                    <input type="date" name="birth-date" class="inputs"/>
                     <br />
 
                     Jenis Kelamin:
-                    <input type="radio" id="male" name="gender" value="Laki-laki" />
+                    <input type="radio" id="male" name="gender" value="Laki-laki" class="radio"/>
                     <label for="male">Laki-laki</label>
-                    <input type="radio" id="female" name="gender" value="Perempuan" />
+                    <input type="radio" id="female" name="gender" value="Perempuan" class="radio"/>
                     <label for="female">Perempuan</label>
                     <br />
 
-                    Pesan:
-                    <textarea placeholder="pesan" name="messages"></textarea>
+                    <h4>Pesan:</h4>
+                    <textarea placeholder="pesan" name="messages" class="textarea"></textarea>
                     <br />
-
-                    <input type="submit" value="submit" />
+                    
+                    <input type="submit" value="SUBMIT" class="button"/>
                 </form>
     
                 <div class="display-form">
@@ -115,7 +118,7 @@
         </section>
 
     </main>
-
+        <!-- footer start -->
     <footer>
         <p>Made by Lutfiah</p>
 
